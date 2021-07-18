@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./style/style.css">
+    <link rel="icon" href="assets/icon.png">
+    <title>GamaStore</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-light fixed-top">
+            <div class="container">
+                <a href="index.html" class="navbar-brand">
+                    <img src="assets/logo.png" width="142">
+                </a>
+
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-principal">
+                    <i class="fas fa-bars text-white"></i>
+                </button>
+
+                <div class="collapse navbar-collapse" id="nav-principal">
+                    <ul class="navbar-nav ml-auto">
+                      <li class="nav-item">
+                        <a href="" class="nav-link">Início</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="" class="nav-link">Produtos</a>
+                      </li>
+                      <li class="divider"></li>
+                      <li class="nav-item">
+                        <a href="" class="nav-link">Contato</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="" class="nav-link">Entrar</a>
+                      </li>
+                    </ul>
+                  </div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" class="d-flex">
+		<div class="container align-self-center">
+			<div class="row">
+				<div class="col-md-12 capa">
+					<h1>Aproveite as promoções</h1>
+						<div id="countdown" class="countdown">
+							<div class="time">
+								<h2 id="days">00</h2>
+								<small>dias</small>
+							</div>
+							<div class="time">
+								<h2 id="hours">00</h2>
+								<small>horas</small>
+							</div>
+							<div class="time">
+								<h2 id="minutes">00</h2>
+								<small>minutos</small>
+							</div>
+							<div class="time">
+								<h2 id="seconds">00</h2>
+								<small>segundos</small>
+							</div>
+						</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+    <section id="servicos">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="row albuns">
+						<div class="col-md-6">
+							<img src="assets/img1.jpg" class="img-fluid d-none d-md-block">
+						</div>
+						<div class="col-md-6">
+							<img src="assets/img2.jpg" class="img-fluid d-none d-md-block">
+						</div>
+					</div>
+					<div class="row albuns">
+						<div class="col-md-6">
+							<img src="assets/img3.jpg" class="img-fluid d-none d-md-block">
+						</div>
+						<div class="col-md-6">
+							<img src="assets/img4.jpg" class="img-fluid d-none d-md-block">
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<h2>O que a GamaStore tem?</h2>
+
+					<h3>Tênis</h3>
+					<p>A GamaStore tem milhares de tênis. Encontre seus tênis favoritos, 
+						novos tênis em um só lugar.
+					</p>
+
+					<h3>Seleção</h3>
+					<p>Na GamaStore você encontra uma seleção especial com o tênis para cada momento. Todas 
+						feitas por fanáticos e especialistas.
+					</p>
+
+					<h3>Novos Lançamentos</h3>
+					<p>Encontre os novos lançamentos da semana e veja o que está 
+						bombando no Top 50.
+					</p>
+					
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="recursos" >
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<section id="form">
+						<h3>Cadastre-se para receber promoções</h3>
+						<form action="/">
+							<input id="name" type="text" name="name" placeholder="Nome">							
+							<input id="email" type="text" name="email" placeholder="Email">					
+							
+							<button onclick="mySubmit()" class="btn btn-lg btn-custom btn-green">Cadastrar</button>
+						</form>
+					</section>
+					<section style="visibility: hidden" id="any">
+						<h3>Você já está cadastrado para receber as promoções</h3>
+						<form action="/"><button onclick="unsubscribe()" class="btn btn-lg btn-custom btn-green">Descadastrar</button></form>
+						
+					</section>
+				</div>
+			</div>
+		</div>
+	</section>
+    
+    <footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-2">
+					<img src="assets/icon.png" width="120">
+				</div>
+				<div class="col-md-2">
+					<h4>empresa</h4>
+					<ul class="navbar-nav">
+						<li><a href="">Sobre</a></li>
+						<li><a href="">Empregos</a></li>
+						<li><a href="">Imprensa</a></li>
+						<li><a href="">Novidades</a></li>
+					</ul>
+				</div>
+				<div class="col-md-2">
+					<h4>comunidades</h4>
+					<ul class="navbar-nav">
+						<li><a href="">Artistas</a></li>
+						<li><a href="">Marcas</a></li>
+					</ul>
+				</div>
+				<div class="col-md-2">
+					<h4>links uteis</h4>
+					<ul class="navbar-nav">
+						<li><a href="">Ajuda</a></li>
+						<li><a href="">Presentes</a></li>
+					</ul>
+				</div>
+				<div class="col-md-4">
+					<ul>
+						<li>
+							<a href=""><img src="assets/facebook.png"></a>
+						</li>
+						<li>
+							<a href=""><img src="assets/twitter.png"></a>
+						</li>
+						<li>
+							<a href=""><img src="assets/instagram.png"></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script src="./js/script.js"></script>
+</body>
+</html>
